@@ -20,13 +20,13 @@ function paintRestaurants(data) {
         var $image = $('<img />');
         var $caracteristicas = $('<a/>', { 'class': 'modales waves-effect waves-light modal-trigger' });
         //Agregamos atributos y textos a nuestros elementos de mi data
-        $name.text(data[i]["name"]);
+        $name.text(data[i]['name']);
         $image.attr('src', data[i]['image']);
-        $caracteristicas.attr( 'href',"#modal1")
-        $caracteristicas.attr('data-name', data[i]["name"]);
-        $caracteristicas.attr('data-adress', data[i]["adress"]);
-        $caracteristicas.attr('data-phone', data[i]["phone"]);
-        $caracteristicas.attr('data-image', data[i]["image"]);
+        $caracteristicas.attr( 'href','#modal1')
+        $caracteristicas.attr('data-name', data[i]['name']);
+        $caracteristicas.attr('data-adress', data[i]['adress']);
+        $caracteristicas.attr('data-phone', data[i]['phone']);
+        $caracteristicas.attr('data-image', data[i]['image']);
         $caracteristicas.text('ver detalle');
 
       //Damos estructura segun jerarquias de padre e hijos
@@ -38,12 +38,8 @@ function paintRestaurants(data) {
 
   }
 }
-
-
-
-
         //$caracteristicas.attr('href', '#modal1') *//*modals html structure*/
-        /*var $restaurantImage = $('<img />', { 'class': 'image-food'})
+        /*var $restaurantImage = $('<img />', { 'class': 'image'})
         $restaurantImage.attr('src', data[i]['image']);
         var $restaurantName = $('<h5 />');
         var $restaurantAdress = $('<p />', { 'class': 'adress' })
@@ -86,15 +82,7 @@ function paintModal() {
   $('#phone-modal').text($phone);
   $('#image-modal').attr('src', image);
 
-    /*var name = $(this).find('h5').text()
-    var adress = $(this).find('.adress').text()
-    var phone = $(this).find('.phone').text()
-    var image = $(this).find('.image').attr('src')
-    console.log(image)
-    $('#name-modal').text(name)
-    $('#adress-modal').text(adress)
-    $('#phone-modal').text(phone)
-    $('#image-food').attr('src', image)*/
+
 }
 
 $(document).on('click', '.modales', paintModal)
