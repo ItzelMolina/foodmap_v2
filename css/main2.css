@@ -1,3 +1,5 @@
+/*Tags*/
+
 body {
   background: #2b2b2b;
   margin: 0;
@@ -22,9 +24,13 @@ div > .col-12s > h3 {
   text-align: center;
 }
 
+/*D´S*/
+
 #modal1 a {
   float: right;
 }
+
+/*Clases*/
 
 .container {
   border: 1px solid orange;
